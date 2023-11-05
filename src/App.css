@@ -94,6 +94,8 @@ h4 {
 .ArrowIcon {
   font-size: xxx-large;
   animation: blink 2s infinite;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .ClockTimerTitle {
@@ -109,6 +111,7 @@ h4 {
   flex-direction: row;
   justify-content: center;
   align-items: start;
+  column-gap: 7%;
   margin-top: 5%;
   width: 30%;
 }
@@ -118,4 +121,15 @@ h4 {
   color: #e6cc03;
   margin: 0 5%;
   animation: blink 2s infinite;
+}
+
+.StartStopButton, .ResetButton {
+  display: flex;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.StartStopButton:active,  .ResetButton:active, .ArrowIcon:active {
+  transform: scale(0.9);
+  box-shadow: 0px 2px 5px #9b8902;
 }
