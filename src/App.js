@@ -6,7 +6,7 @@ import { useTimer } from 'react-timer-hook';
 
 const App = () => {
   const [breakLength, setBreakLength] = useState(300);
-  const [sessionLength, setSessionLength] = useState(3600);
+  const [sessionLength, setSessionLength] = useState(1500);
   const [isBreak, setIsBreak] = useState(false);
   const audioRef = useRef(null);
 
